@@ -9,23 +9,23 @@ function setDate() {
     const minuteHand = document.querySelector(".minute-hand");
     minuteHand.style.transform = "rotate(" + minutesDegree + "deg)";
     const hours = now.getHours();
-    const hoursDegree = (hours / 12) * 360;
+    const hoursDegree = (hours / 24) * 360;
     const hourHand = document.querySelector(".hour-hand");
     hourHand.style.transform = "rotate(" + hoursDegree + "deg)";
     if (secondsDegree > 353) {
         secondHand.style.transition = "none";
     } else if (secondsDegree > 0) {
         secondHand.style.transition = "0.2s cubic-bezier(0.42, 0, 0, 1.96)";
-    };
+    }
     if (minutesDegree > 353) {
         minuteHand.style.transition = "none";
     } else if (minutesDegree > 0) {
         minuteHand.style.transition = "0.8s cubic-bezier(0.42, 0, 0, 1.96)";
-    };
-    if (hoursDegree > 320) {
+    }
+    if (hoursDegree > 340) {
         hourHand.style.transition = "none";
-    } else if (hourssDegree > 0) {
-        hourHand.style.transition = "0.8s cubic-bezier(0.42, 0, 0, 1.96)"
-    };
+    } else if (hoursDegree > 0) {
+        hourHand.style.transition = "0.8s cubic-bezier(0.42, 0, 0, 1.96)";
+    }
 }
-setInterval(setDate, 1000)
+setInterval(setDate, 1000);
