@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center/cover;
+}
+
+.container {
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .clock {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(#535353, black);
+  box-shadow: 0 0 15px black;
+}
+
+.container .clock .second-hand {
+  transform-origin: 100% 100%;
+  transition: 0.2s cubic-bezier(0.42, 0, 0, 1.96);
+  box-shadow: 0 0 3px black;
+  border-radius: 3px;
+  background: radial-gradient(#949494, #666666);
+  position: absolute;
+  height: 42%;
+  top: 8%;
+  width: 2px;
+  left: calc(50% - 1px);
+}
+
+.container .clock .minute-hand {
+  transform-origin: 100% 100%;
+  transition: 0.2s cubic-bezier(0.42, 0, 0, 1.96);
+  box-shadow: 0 0 3px black;
+  border-radius: 3px;
+  background: radial-gradient(#949494, #666666);
+  position: absolute;
+  height: 38%;
+  top: 12%;
+  width: 4px;
+  left: calc(50% - 2px);
+}
+
+.container .clock .hour-hand {
+  transform-origin: 100% 100%;
+  transition: 0.2s cubic-bezier(0.42, 0, 0, 1.96);
+  box-shadow: 0 0 3px black;
+  border-radius: 3px;
+  background: radial-gradient(#949494, #666666);
+  position: absolute;
+  height: 28%;
+  top: 22%;
+  width: 8px;
+  left: calc(50% - 4px);
+}
+
+.container .clock .number {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.container .clock .twelve {
+  top: 15px;
+  left: calc(50% - 12px);
+}
+
+.container .clock .one {
+  top: 38px;
+  left: 70%;
+}
+
+.container .clock .two {
+  top: 90px;
+  left: 85%;
+}
+
+.container .clock .three {
+  top: calc(50% - 14px);
+  right: 15px;
+}
+
+.container .clock .four {
+  bottom: 90px;
+  left: 85%;
+}
+
+.container .clock .five {
+  bottom: 38px;
+  left: 70%;
+}
+
+.container .clock .six {
+  bottom: 15px;
+  left: calc(50% - 4px);
+}
+
+.container .clock .seven {
+  bottom: 36px;
+  right: 68%;
+}
+
+.container .clock .eight {
+  bottom: 88px;
+  right: 84%;
+}
+
+.container .clock .nine {
+  bottom: calc(50% - 14px);
+  left: 18px;
+}
+
+.container .clock .ten {
+  top: 92px;
+  right: 82%;
+}
+
+.container .clock .eleven {
+  top: 36px;
+  right: 68%;
+}
+/*# sourceMappingURL=style.css.map */
