@@ -1,16 +1,16 @@
 function setDate() {
-    const now = new Date();
-    const seconds = now.getSeconds();
-    const secondsDegree = (seconds / 60) * 360;
-    const secondHand = document.querySelector(".second-hand");
+    var now = new Date();
+    var seconds = now.getSeconds();
+    var secondsDegree = (seconds / 60) * 360;
+    var secondHand = document.querySelector(".second-hand");
     secondHand.style.transform = "rotate(" + secondsDegree + "deg)";
-    const minutes = now.getMinutes();
-    const minutesDegree = (minutes / 60) * 360;
-    const minuteHand = document.querySelector(".minute-hand");
+    var minutes = now.getMinutes();
+    var minutesDegree = (minutes / 60) * 360;
+    var minuteHand = document.querySelector(".minute-hand");
     minuteHand.style.transform = "rotate(" + minutesDegree + "deg)";
-    const hours = now.getHours();
-    const hoursDegree = (hours / 24) * 360;
-    const hourHand = document.querySelector(".hour-hand");
+    var hours = now.getHours();
+    var hoursDegree = (hours / 12) * 360;
+    var hourHand = document.querySelector(".hour-hand");
     hourHand.style.transform = "rotate(" + hoursDegree + "deg)";
     if (secondsDegree > 353) {
         secondHand.style.transition = "none";
